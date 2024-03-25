@@ -1,0 +1,143 @@
+* {
+  font-family: "Quicksand";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #444;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+}
+
+html {
+  background: linear-gradient(110deg, #c22ed0 30%, #5ffae0 80%);
+}
+
+input:focus {
+  outline: none;
+}
+
+#register-container {
+  max-width: 900px;
+  min-height: 80vh;
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner{
+    background: url("/img/reuniao.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+#banner-layer{
+    background-color: rgba(25,11,122,0.7);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1{
+    font-size: 4rem ;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    word-spacing: 50rem;
+}
+
+#register-form{
+    background-color: #fdfdfd;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+#register-form p{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.form-control{
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label{
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+
+.form-control input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: .6rem 0.1rem;
+}
+
+#generate-password{
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#generate-password:hover{
+    color: #c22ed0;
+    background-color: #5ffae0;
+    border-radius: 10px;
+    padding: .2rem;
+    font-weight: bolder;
+}
+
+#register-form #generated-password{
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: .4rem;
+    color: #444;
+    text-align: center;
+    margin-bottom:1rem ;
+    display: none;
+}
+
+#register-form #generated-password p{
+    color: #3d9c2a;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+#register-form input[type="submit"]{
+    border-color: #c22ed0;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    align-self: flex-end;
+    box-shadow: 0 0 40px 40px #df88da inset, 0 0 0 0 #5ffae0;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#register-form input:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    color: #444;
+  }
