@@ -90,13 +90,13 @@ input:focus {
     padding: .6rem 0.1rem;
 }
 
-#generate-password{
+#open-generate-password{
     font-weight: bold;
     cursor: pointer;
     transition: .5s;
 }
 
-#generate-password:hover{
+#open-generate-password:hover{
     color: #c22ed0;
     background-color: #5ffae0;
     border-radius: 10px;
@@ -137,7 +137,66 @@ input:focus {
     transition: all 150ms ease-in-out;
 }
 
-#register-form input:hover {
+#generate-options button{
+    border-color: #c22ed0;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: .5rem .5rem;
+    max-width: 150px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 40px 40px #df88da inset, 0 0 0 0 #5ffae0;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    margin-bottom: 1rem;
+}
+#register-form input:hover,
+#generate-options button:hover,
+#copy-password:hover{
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
     color: #444;
   }
+
+
+  /* modificação requerida / segunda versão */
+  #generate-options {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+  }
+
+  #generate-options .form-control{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+ #generate-options input[type="text"]{
+    max-width: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+ }
+
+ #copy-password{
+    border-color: #c22ed0;
+    border-radius: 5px;
+    color: #000000;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: .3rem .3rem;
+    max-width: 150px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 40px 40px #df88da inset, 0 0 0 0 #5ffae0;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.hide{
+    display: none;
+}
