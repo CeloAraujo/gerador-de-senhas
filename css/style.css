@@ -194,6 +194,7 @@ input:focus {
     box-shadow: 0 0 40px 40px #df88da inset, 0 0 0 0 #5ffae0;
     -webkit-transition: all 150ms ease-in-out;
     transition: all 150ms ease-in-out;
+    margin-top: .5rem;
     margin-bottom: 1rem;
 }
 
